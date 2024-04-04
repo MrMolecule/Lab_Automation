@@ -10,7 +10,8 @@ import csv
 import wx.dataview as dv
 from datetime import datetime
 
-# Define sample_data at the module level
+# Define sample_data at the module level: this is just a sample data set, you would need to use a different initial code to grab the data from the SQL database
+
 sample_data = [
     ("231107001-RAP", "STEC", "06:00"),
     ("231107001-RAP", "Salmonella", "06:00"),
