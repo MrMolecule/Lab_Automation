@@ -569,7 +569,7 @@ class GeneUP_SecondWindow(wx.Frame):
         super().__init__(parent, title=title, size=(1300, 400))
         self.selected_samples = selected_samples if selected_samples else []
         self.mgr = wx.aui.AuiManager(self)
-        self.pdf_path = "/Users/carlosparedes/Desktop/Lab Automation/WS513_PCR_Template.pdf"
+        self.pdf_path = "/Users/carlosparedes/Documents/VSC Projects/Lab_Automation/PDF_Forms/WS513_PCR_Template.pdf"
         
         self.middle_sizer = None 
         
@@ -786,7 +786,7 @@ class GeneUP_SecondWindow(wx.Frame):
         # Create the custom overlay panel with the specified PDF path
         overlay_panel = OverlayPanel(overlay_frame, self.pdf_path, (800, 600))
 
-        pdf_path = "/Users/carlosparedes/Desktop/Lab Automation/WS513_PCR_Template.pdf"
+        pdf_path = "/Users/carlosparedes/Documents/VSC Projects/Lab_Automation/PDF_Forms/WS513_PCR_Template.pdf"
        
         pdf_window = fitz.open(pdf_path)
 
@@ -823,7 +823,7 @@ class BAX_SecondWindow(wx.Frame):
         super().__init__(parent, title=title, size=(1300, 400))
         self.selected_samples = selected_samples if selected_samples else []
         self.mgr = wx.aui.AuiManager(self)
-        self.pdf_path = "/Users/carlosparedes/Desktop/Lab Automation/WS557_BAX_PCR_Template.pdf"
+        self.pdf_path = "/Users/carlosparedes/Documents/VSC Projects/Lab_Automation/PDF_Forms/WS557_BAX_PCR_Template.pdf"
         self.middle_sizer = None 
         
         
@@ -1040,7 +1040,7 @@ class BAX_SecondWindow(wx.Frame):
         overlay_panel = OverlayPanel(overlay_frame, self.pdf_path, (800, 600))
 
     
-        pdf_path = "/Users/carlosparedes/Desktop/Lab Automation/WS557_BAX_PCR_Template.pdf"
+        pdf_path = "/Users/carlosparedes/Documents/VSC Projects/Lab_Automation/PDF_Forms/WS557_BAX_PCR_Template.pdf"
        
         pdf_window = fitz.open(pdf_path)
 
@@ -1078,7 +1078,7 @@ class Romer_Frame(wx.Frame):
         self.panel = wx.Panel(self)
 
         # Display PDF using PyMuPDF
-        pdf_path =  "/Users/carlosparedes/Desktop/Lab Automation/WS509_ELISA_Template.pdf"
+        pdf_path =  "/Users/carlosparedes/Documents/VSC Projects/Lab_Automation/PDF_Forms/WS509_ELISA_Template.pdf"
         pdf_document = fitz.open(pdf_path)
 
         # Extract the first page
@@ -1113,7 +1113,7 @@ class VIDAS_Frame(wx.Frame):
 
         # Create the left panel for the PDF
         pdf_panel = wx.Panel(splitter)
-        pdf_path = "/Users/carlosparedes/Desktop/Lab Automation/WS543_VIDAS_Template.pdf"
+        pdf_path = "/Users/carlosparedes/Documents/VSC Projects/Lab_Automation/PDF_Forms/WS543_VIDAS_Template.pdf"
        
         pdf_window = fitz.open(pdf_path)
 
